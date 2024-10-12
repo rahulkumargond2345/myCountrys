@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
+body.dark {
+  background-color: hsl(207, 26%, 17%);
+  color: white;
+}
+
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 8rem 10rem 0rem 10rem;
+    gap: 66.7px;
+    z-index: 0;
+}
+.container a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.cardContainer{
+    border: 1px solid;
+    border-radius: 1rem;
+    width: 16rem;
+    height: 23rem;
+    overflow: hidden;
+    box-shadow: 0 1px 10px 1px #000;
+}
+.cardText{
+    margin-top: 0;
+    padding-left: 1.5rem;
+    height: 7rem;
+}
+.h4{
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.heading{
+    margin-bottom: 17px;
+    margin-top: 10px;
+    padding-left: 1.5rem;
+}
+.span{
+    font-weight: normal;
+}
+.headerContainer{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 10rem 0rem 10rem;
+    box-shadow: 0 1px 10px 1px #000; 
+    position: sticky;
+    top: 0;          
+    z-index: 1000;
+}
+.mode{
+    text-align: center;
+    width: 5rem;
+    font-weight: bold;
+    height: 2rem;
+    font-size: medium;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+.myimg {
+    height: 10rem;
+    overflow: hidden;
+}
+.myimg img{
+    width: 100%;
+}
+.fasolid{
+    position: absolute;
+    padding-top: 13px;
+    padding-left: 7px;
+}
+[type="text"]{
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    padding-left: 1.67rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: inherit;
+
+}
+.filter{
+    width: 9rem;
+    text-align: center;
+    border-radius: 5px;
+    height: 2.8rem;
+    box-shadow: 0px 1px 3px 1px #000000;
+    outline: none;
+    border: none;
+    font-size: medium;
+    background-color: inherit;
+}
+.search{
+    width: 22rem;
+    height: 2.8rem;
+    box-shadow: 0px 1px 3px 1px #6e6b6b;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+}
+.searchContainer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem 0 10rem;
+}
+.backbtn{
+    margin: 2rem 10rem 0;
+    width: 2.5cm;
+    font-size: larger;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 5rem 10rem 0rem 10rem;
+  }
+  
+  .img {
+    flex: 1;
+    padding-top: 2rem;
+  }
+  
+  .img img {
+    width: 100%; 
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .textcontainer {
+    flex: 2;
+  }
+  
+  .textrow {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .textcol {
+    flex: 1;
+  }
+  .text {
+    flex: 1;
+  }
+  .borders {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .borders h4 {
+    margin-bottom: 10px;
+  }
+  
+  .borderboxes {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .borderboxes button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .borderboxes button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .borderboxes{
+    padding-top: 1.29rem;
+  }
+  .borderboxes a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    height: 1.4rem;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 3px;
+  }
+  .borders{
+    display: flex;
+    gap: 1rem;
+  }
+  .headerContainer a{
+    text-decoration: none;
+    color: black;
+  }
+
+  :global(.dark) {
+    background-color:hsl(207, 26%, 17%);
+    color: white;
+ }
+ :global(.dark) a{
+  color: white;
+ }
+:global(.dark) .filter {
+  background-color: #333;
+  color: white; 
+}
+
+.filter option {
+  background-color: white;
+  color: black;
+}
+
+:global(.dark) .filter option {
+  background-color: #333; 
+  color: white;
+}
+:global(.dark) .mode .icon{
+  color: white;
+}
+@media (max-width: 902px) {
+  .searchContainer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 10rem 0 10rem;
+}
+.headerContainer{
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  box-shadow: 0 1px 10px 1px #000; 
+}
+.container{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0rem 0rem 0rem;
+  gap: 66.7px;
+}
+}

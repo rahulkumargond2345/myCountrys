@@ -1,0 +1,20 @@
+
+.ConstryListsimmer{
+    border: 3px solid blue;
+}
+.headings{
+    background: #4c43436b;
+    width: 13rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    height: 2rem;
+}
+.h4s{
+    background: #4c43436b;
+    width: 12rem;
+    border-radius: 5px;
+    height: 1.5rem;
+}
+.myimgs{
+    background: #4c43436b;
+}
