@@ -11,7 +11,7 @@ function RenderComponents() {
     return (
       <>
       <userContext.Provider value={{them, setThem}}>
-        <Header title={'Where in the world and Countrys same same but?'} />
+        <Header title={'Where in the world?'} />
         <Outlet/>
         
         </userContext.Provider>
